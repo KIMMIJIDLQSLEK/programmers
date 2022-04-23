@@ -1,3 +1,4 @@
 a,b=map(int,input().strip().split())
 
-print(("*"*a+"\n")*b)
+result=("*"*a+"\n")*b
+print(result)

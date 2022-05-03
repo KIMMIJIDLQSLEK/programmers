@@ -1,20 +1,10 @@
-#숫자의 약수의 리스트만들기
-#숫자의 리스트 값 더하기
+#약수: 나머지가 0일경우
 def solution(num):
-    list=[]
+    sum=0
     for i in range(1,num+1):
-        mok=num//i
-        if i>mok:
-            break;
         if num%i==0:
-            if mok!=i:
-                list.append(i)
-                list.append(mok)
-            else:
-                list.append(i)
-
-    print(list)
-    return sum(list)
+            sum+=i
+    return sum
 
 num=int(input())
 print(solution(num))
